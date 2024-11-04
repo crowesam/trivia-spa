@@ -1,0 +1,122 @@
+/* Center the entire app */
+body, .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #6b9fd6, #7f9cf5); /* Matches the current background colors */
+  font-family: 'Nunito', sans-serif;
+  font-weight:bold;
+  font-size:large;
+  color: #fff;
+  text-align: center;
+}
+
+/* Question box styling */
+.question-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  margin: 20px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.question-text {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Styles for the splash screen */
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #6b9fd6;
+  color: white;
+  text-align: center;
+}
+
+/* Replay button for the splash screen video */
+#replay-splash-button {
+  margin-top: 10px;
+  padding: 20px 20px;
+  background-color: #a40ab3;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight:bold;
+  font-size:x-large;
+  border:  2px solid purple;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.replay-button:hover {
+  background-color: #333;
+}
+
+/* Replay splash screen button in the main app */
+.replay-splash-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+#replay-splash-button:hover {
+  background-color: #e25a0b;
+}
+
+/* Button styles */
+.buttons-container button {
+  padding: 10px 20px;
+  margin: 50px;
+  background-color: #6e5b5b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons-container button:hover {
+  background-color: #333;
+}
+
+.buttons-container button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Answer button styling */
+.answer-button {
+  padding: 10px 20px;
+  margin: 5px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.answer-button.correct {
+  background-color: green;
+}
+
+.answer-button.incorrect {
+  background-color: red;
+}
