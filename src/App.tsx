@@ -161,15 +161,14 @@ const App = () => {
         <h2>{questions[currentQuestion].question}</h2>
         <div >
           {questions[currentQuestion].answers.map((answer, index) => (
-            <button
+           <div id="breakit">
+           <button
               key={index}
               onClick={() => handleAnswer(answer)}
               style={{
-                display: 'flex-row',
-                flex: 1,
                 padding: '10px 20px',
                 margin: '5px',
-                width: '200px',
+                width: '250px',
                 backgroundColor: selectedAnswer === answer
                   ? (answer === questions[currentQuestion].correctAnswer ? 'green' : 'red')
                   : 'orange',
@@ -185,6 +184,7 @@ const App = () => {
             >
               {answer}
             </button>
+            </div>
           ))}
         </div>
       </div>
